@@ -1,0 +1,47 @@
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SamsungSansRegular';
+    src: url(/fonts/samsungsharpsans.otf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SamsungSansMedium';
+    src: url(/fonts/samsungsharpsans-medium.otf) format('opentype');
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'SamsungSansBold';
+    src: url(/fonts/samsungsharpsans-bold.otf) format('opentype');
+    font-weight: bold;
+}
+
+nav {
+    position: relative;
+}
+
+.nav {
+    width: 1920px;
+    height: 80px;
+    background: rgba(40, 38, 38, 0.50);
+    backdrop-filter: blur(15px);
+    flex-shrink: 0;
+}
+
+.nav__list {
+    font-family: 'SamsungSansRegular';
+}
+
+.primary__text {
+    font-family: 'SamsungSansBold';
+}
+
+.secondary__text {
+    font-family: 'SamsungSansBold';
+}
