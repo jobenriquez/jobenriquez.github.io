@@ -311,22 +311,22 @@ body {
         padding: 0;
         margin: 0;
     }
-    #introduction > div {
+    .featured-tv {
+        padding: 0;
         margin: 0;
     }
     .featured-tv>img {
+        width: 100%;
         scale: 1;
-        transform: translate(0,-5.5%);
-        margin: 0;
-        padding: 0;
+        transform: translate(0);
     }
-    .featured-tv {
+    #introduction > div {
         margin: 0;
-        padding: 0;
     }
+
     .primary-text {
-        margin-top: 0;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 45px;
         text-align: center;
     }
@@ -367,11 +367,7 @@ body {
         margin-top: 0;
         padding-top: 0;
     }
-    
-    /* .featured-tv-2 > img {
-        width: 100%;
-    } */
-    
+
     .featured-tv-3 > img {
         width: 100%;
         scale: 1;
