@@ -3,34 +3,113 @@
 *::after {
     box-sizing: border-box;
 }
-
 :root {
     --grid: 1fr;
 }
-
 @font-face {
     font-family: 'SamsungSansRegular';
     src: url(/fonts/samsungsharpsans.otf) format('opentype');
     font-weight: normal;
 }
-
 @font-face {
     font-family: 'SamsungSansMedium';
     src: url(/fonts/samsungsharpsans-medium.otf) format('opentype');
     font-weight: medium;
 }
-
 @font-face {
     font-family: 'SamsungSansBold';
     src: url(/fonts/samsungsharpsans-bold.otf) format('opentype');
     font-weight: bold;
 }
-
 body {
     margin: 0;
     padding: 0;
     width: 100vw;
 }
+
+/*TEXT STYLES*/
+#title {
+    color: #000;
+    text-align: left;
+    font-family: 'SamsungSansBold';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 2.5em;
+    padding-left: 0.5em;
+    padding-bottom: 1em;
+
+}
+h1 {
+    color: #000;
+    text-align: center;
+    font-family: 'SamsungSansBold';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    padding-bottom: 8px;
+}
+h2 {
+    color: #000;
+    text-align: center;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0.5em;
+}
+h3 {
+    color: #000;
+    text-align: left;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 1.5em;
+}
+/*TEXT STYLES*/
+
+/* TEXT BOX STYLES */
+#textBox {
+    border: none;
+    border-radius: 16px;
+    background: #E1E1E1;
+    outline: none;
+    width: 90%;
+    height: 50px;
+    color: #000;
+    text-align: left;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 1em;
+}
+#textBoxBig {
+    border: none;
+    border-radius: 16px;
+    background: #E1E1E1;
+    outline: none;
+    width: 90%;
+    height: 250px;
+    resize: both;
+    overflow: auto;
+    direction: ltr;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1.5em;
+    padding-right: 0;
+}
+/* TEXT BOX STYLES */
 
 /* NAVBAR */
 #navbar {
@@ -44,28 +123,23 @@ body {
     text-align: center;
     z-index: 999;
 }
-
 .nav_bar {
     margin: 0;
     padding: 0;
 }
 
-
 .nav_list {
     margin: 0 2.5em;
     margin-top: 1em;
     padding: 0;
-
     font-family: 'SamsungSansRegular';
     list-style: none;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
-
     display: flex;
     justify-content: space-between;
 }
-
 .nav_link {
     text-decoration: none;
     color: white;
@@ -97,7 +171,6 @@ body {
     margin-right: 10px;
     padding: .5em 1.5em;
 }
-
 .btn-secondary {
     text-decoration: none;
     color: white;
@@ -115,8 +188,14 @@ body {
     border-radius: 82.5px;
     margin-bottom: 10px;
 }
+.btn-tertiary {
+    font-family: 'SamsungSansMedium';
+    font-size: 13px;
+    color: black;
+}
 /* BUTTONS */
 
+/*index.html*/
 /* HERO */
 #hero {
     /* padding: 0 0; */
@@ -208,12 +287,27 @@ body {
     margin-top: 0;
     padding-top: 0;
 }
-
 /* INRODUCTION */
+/*index.html*/
+
+/*support.html*/
+#textField {
+    padding-top: 1em;
+    padding-left: 1.5em;
+    width: 95%;
+    margin-bottom: 1.5em;
+}
+#textField > h3 {
+    padding-left: 0;
+}
+#submit{
+    margin-top: 1.5em;
+}
+/*support.html*/
 
 /* FOOTER */
 #footer {
-    /* width: 100vw; */
+    /* width: 100%;  */
     background: rgba(40, 38, 38, 0.50);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -253,7 +347,6 @@ body {
     height: 30px;
     width: auto;
 }
-
 /* FOOTER */
 
 /* media queries */
@@ -271,7 +364,7 @@ body {
         border-radius: 82.5px;
         margin-bottom: 10px;
     }
-    
+/*index.html*/
     .btn-secondary {
         font-size: 13px;
         line-height: 30px;
@@ -373,6 +466,7 @@ body {
         scale: 1;
     } 
     /* INTRODUCTION */
+/*index.html*/
 
     /* FOOTER */
     .footer-text p {
