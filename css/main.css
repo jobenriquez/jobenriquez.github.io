@@ -36,10 +36,6 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-top: 2.5em;
-    padding-left: 0.5em;
-    padding-bottom: 1em;
-
 }
 h1 {
     color: #000;
@@ -49,8 +45,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin: 0;
-    padding-bottom: 8px;
+    margin: auto;
 }
 h2 {
     color: #000;
@@ -60,7 +55,7 @@ h2 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0 0.5em;
+    /* margin: 0 1.5em; */
 }
 h3 {
     color: #000;
@@ -70,7 +65,8 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 1.5em;
+    /* padding-left: 1.5em; */
+    /* margin-bottom: 5px; */
 }
 /*TEXT STYLES*/
 
@@ -81,7 +77,7 @@ h3 {
     background: #E1E1E1;
     outline: none;
     width: 90%;
-    height: 50px;
+    height: 37px;
     color: #000;
     text-align: left;
     font-family: 'SamsungSansRegular';
@@ -89,7 +85,8 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 1em;
+    padding-left: 1em; 
+    padding-right: 1em; 
 }
 #textBoxBig {
     border: none;
@@ -106,8 +103,10 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 1.5em;
-    padding-right: 0;
+    padding: 0.7em 1em; 
+}
+input {
+    text-align: left;
 }
 /* TEXT BOX STYLES */
 
@@ -163,13 +162,14 @@ h3 {
     line-height: 20px;
     cursor: pointer;
     display: inline-block;
-    width: 60px;
+    width: 86px;
     height: 20px;
     background-color: black;
     border-radius: 82.5px;
     margin-bottom: 10px;
+    /* margin-top: 0px; */
     margin-right: 10px;
-    padding: .5em 1.5em;
+    padding: 7px 13px;
 }
 .btn-secondary {
     text-decoration: none;
@@ -179,14 +179,13 @@ h3 {
     text-align: center;
     line-height: 20px;
     cursor: pointer;
-    padding: .5em 1.5em;
     display: inline-block;
-
     width: 86px;
     height: 20px;
     background-color: #525051;
     border-radius: 82.5px;
     margin-bottom: 10px;
+    padding: 7px 13px;
 }
 .btn-tertiary {
     font-family: 'SamsungSansMedium';
@@ -226,6 +225,7 @@ h3 {
 
 .primary-text {
     margin-top: 0;
+    margin-bottom: 10px;
     font-family: 'SamsungSansBold';
     font-size: 30px;
     text-align: center;
@@ -280,29 +280,35 @@ h3 {
 }
 
 .tagline {
-    font-family: 'SamsungSansRegular';
-    font-weight: normal;
     font-size: 13px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     margin-top: 0;
     padding-top: 0;
+    text-align: center;
 }
 /* INRODUCTION */
 /*index.html*/
 
 /*support.html*/
-#textField {
-    padding-top: 1em;
-    padding-left: 1.5em;
-    width: 95%;
-    margin-bottom: 1.5em;
+.textHeadings {
+    padding:0 28px;
+    padding-top: 118px;
 }
-#textField > h3 {
+.textHeadings > h1 {
+    padding-top: 30px;
+}
+.textFields {
+   margin: 30px 28px;
+   margin-bottom: 20px;
+}
+.textFields > h3 {
     padding-left: 0;
+    margin-bottom: 1px;
 }
 #submit{
     margin-top: 1.5em;
 }
+
 /*support.html*/
 
 /* FOOTER */
@@ -352,25 +358,12 @@ h3 {
 /* media queries */
 /* desktop css */
 @media (min-width: 780px) {
-    .btn-primary {
-        font-size:13px;
-        line-height: 30px;
-        padding: .5em 1.5em; 
-        display: inline-block;
-    
-        width: 90px;
-        height: 30px;
-        background-color: black;
-        border-radius: 82.5px;
-        margin-bottom: 10px;
-    }
 /*index.html*/
-    .btn-secondary {
-        font-size: 13px;
-        line-height: 30px;
+    .btn-secondary, .btn-primary  {
+        line-height: 25px;
+        font-size: 15px;
         width: 105px;
-        height: 30px;
-        margin-bottom: 15px;
+        height: 25px;
     }
     /* NAVIGATION */
     .nav_bar {
@@ -467,6 +460,42 @@ h3 {
     } 
     /* INTRODUCTION */
 /*index.html*/
+
+/*support.html */
+.textHeadings {
+    padding:0 28px;
+    padding-top: 90px;
+}
+#title {
+    font-size: 58px;
+}
+.textHeadings > h1 {
+    padding-top: 30px;
+    font-size: 45px;
+}
+.textHeadings > h2 {
+    font-size: 20px;
+}
+.textFields {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+ }
+.textFields > h3 {
+    padding-left: 0;
+ }
+
+#textBox {
+    width: 95%;
+}
+#textBoxBig {
+    width: 95%;
+}
+ .btn-tertiary {
+    font-size: 15px;
+ }
+/*support.html */
 
     /* FOOTER */
     .footer-text p {
