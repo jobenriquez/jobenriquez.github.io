@@ -77,7 +77,7 @@ h3 {
     border-radius: 16px;
     background: #E1E1E1;
     outline: none;
-    width: 90%;
+    width: 100%;
     height: 37px;
     color: #000;
     text-align: left;
@@ -86,15 +86,19 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 1em; 
-    padding-right: 1em; 
+    margin:auto;
+    padding: 20px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+
 }
 #textBoxBig {
     border: none;
     border-radius: 16px;
     background: #E1E1E1;
     outline: none;
-    width: 90%;
+    width: 100%;
     height: 250px;
     resize: both;
     overflow: auto;
@@ -104,7 +108,11 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 0.7em 1em; 
+    margin: auto;
+    padding: 20px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
 }
 input {
     text-align: left;
@@ -304,6 +312,7 @@ input {
 .textFields {
    margin: 30px 28px;
    margin-bottom: 20px;
+   width: 83%;
 }
 .textFields > h3 {
     padding-left: 0;
@@ -346,6 +355,62 @@ input {
     display: block;
 }
 /*about.html*/
+
+/*Log In*/
+.logInFields > h3 {
+    padding-left: 0;
+    margin-bottom: 9px;
+}
+.logInFields {
+    width: 80%;
+    margin: 30px auto;
+    padding-bottom: 338px;
+}
+.password {
+    margin-bottom: 10px;
+}
+#logInBtn {
+    margin-top: 15px;
+}
+#rememberMeLabel {
+    font-family: 'SamsungSansMedium';
+    font-size: 13px;
+    color: black;
+}
+#forgotPassword {
+    margin-left: 10px;
+}
+/*Log In*/
+
+/*Purchases*/
+.tvDetails {
+    color: #000;
+    text-align: left;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.bold {
+    font-family: 'SamsungSansBold';
+}
+#purchase1, #purchase2, #purchase3, #purchase4 {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.tvDetails {
+    width: 100%;
+}
+.tvImage {
+    width: 100%;
+}
+.tvImage > img {
+    width: 100%;
+}
+/*Purchases*/
 
 /* FOOTER */
 #footer {
@@ -524,10 +589,11 @@ input {
     }
 
     #textBox {
-        width: 95%;
+        width: 100%;
+        margin:auto;
     }
     #textBoxBig {
-        width: 95%;
+        width: 100%;
     }
     .btn-tertiary {
         font-size: 15px;
@@ -562,6 +628,30 @@ input {
         padding-left: 0px;
     }
 
+    /*Log In*/
+    .logInFields {
+        width: 20%;
+        margin-bottom: 65px;
+    }
+    /*Log In*/
+
+    /* Purchases */
+    #purchase1, #purchase2, #purchase3, #purchase4 {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        margin: 30px auto;
+    }
+    .tvDetails {
+        width: 100%;
+    }
+    .tvImage {
+        width: 40%;
+    }
+    .tvImage > img {
+        width: 100%;
+    }
+    /* Purchases */
     /*about.html*/
 
         /* FOOTER */
