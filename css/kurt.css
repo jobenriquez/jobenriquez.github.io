@@ -27,6 +27,11 @@ body {
     width: 100vw;
 }
 
+.bold {
+    font-family: 'SamsungSansBold';
+}
+
+
 /*TEXT STYLES*/
 /*TEXT STYLES*/
 #title {
@@ -165,7 +170,17 @@ h3 {
     margin-bottom: 10px;
     margin-right: 10px;
     padding: 7px 13px;
+    transition: 0.15s;
 }
+
+.btn-primary:hover {
+    opacity: 80%;
+}
+
+.btn-primary:active {
+    opacity: 60%;
+}
+
 .btn-secondary {
     text-decoration: none;
     color: white;
@@ -181,7 +196,17 @@ h3 {
     border-radius: 82.5px;
     margin-bottom: 10px;
     padding: 7px 13px;
+    transition: 0.15s;
 }
+
+.btn-secondary:hover {
+    opacity: 90%;
+}
+
+.btn-secondary:active {
+    opacity: 80%;
+}
+
 .btn-tertiary {
     font-family: 'SamsungSansMedium';
     font-size: 13px;
@@ -353,6 +378,14 @@ h3 {
     flex-basis: 80%;
     align-items: center;
     margin-top: -30px;
+    transition: box-shadow 0.1s ease, 
+    background-color 0.1s ease, transform 0.07s ease;
+}
+
+.store-discounted-tv-1:hover {
+    transform: scale(1.003);
+    box-shadow: 0px 0px 4px rgba(53, 53, 53, 0.3);
+    background-color: rgb(250, 250, 250);
 }
 
 .tv-stats {
@@ -434,6 +467,316 @@ p {
     line-height: normal;
     margin-top: 0px;
 }
+/* STORE */
+
+/* PRODUCT INFORMATION */
+.flex-container-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    width: auto;
+    padding: 30px 0px 70px;
+    row-gap: 15px;
+}
+
+.tv-display-product {
+    width: 425px;
+
+    align-items: center;
+    margin-top: -30px;
+}
+
+.tv-display-product-3 {
+    width: 425px;
+
+    align-items: center;
+    margin-top: -30px;
+}
+
+
+.product-image {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -35px;
+    align-items: top;
+}
+
+.tv-description {
+    color: #000;
+    text-align: left;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: -16px;
+    flex-basis: 80%;
+    /* min-width: 400px; */
+}
+
+.tv-description-specs {
+    color: #000;
+    text-align: left;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: -16px;
+    flex-basis: 80%;
+    /* min-width: 400px; */
+}
+
+.tv-description-product-1 {
+    color: #000;
+    text-align: left;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: -16px;
+    flex-basis: 80%;
+    /* min-width: 400px; */
+}
+
+.tv-description-product-2 {
+    color: #000;
+    text-align: left;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: -16px;
+    flex-basis: 80%;
+    /* min-width: 400px; */
+}
+
+
+.btn-space {
+    margin-left: 23px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.buy-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    margin-left: 5px;
+    color: #000;
+    text-align: center;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    line-height: 40px;
+    
+}
+
+.tech-specs {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tv-specs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    width: auto;
+    margin: 0 auto;
+    padding: 15px 0px 50px;
+    row-gap: 40px;
+    
+}
+
+@media (min-width: 800px) {
+    .flex-container-3 {
+        padding: 50px 0px 70px;
+        row-gap: 40px;
+    }
+    
+    .tv-specs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: top;
+        width: auto;
+        margin: 0 auto;
+        padding: 15px 0px 50px;
+        row-gap: 0px;
+        
+    }
+
+    .tv-display-product-3 {
+        width: 425px;
+    
+        align-items: center;
+        margin-top: -30px;
+        
+    }
+    
+
+    .tv-description {
+        flex-basis: 40%;
+        margin-left: 30px;
+    }
+
+    .tv-description-specs {
+        flex-basis: 37%;
+        margin-left: 15px;
+    }
+
+    .tv-description-product-1 {
+        flex-basis: 10%;
+        margin-left: 30px;
+    }
+
+    .tv-description-product-2 {
+        flex-basis: 35%;
+        margin-left: 30px;
+    }
+    
+    .btn-space {
+        margin-left: 25px;
+        justify-content: left;
+    }
+    
+}
+
+/* PRODUCT INFORMATION */
+
+/* CONFIRM PURCHASE */
+.tv-display-product-2 {
+    width: 500px;
+    align-items: center;
+    margin-top: -39px;
+}
+
+.tv-description-2 {
+    color: #000;
+    text-align: left;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-basis: 57%;
+    /* min-width: 400px; */
+}
+
+.product-info {
+    margin-left: -35px;
+}
+
+.flex-container-4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 30px 0px 70px;
+    row-gap: 0px;
+    column-gap: 10px;
+}
+
+#textBox-2 {
+    border: none;
+    border-radius: 16px;
+    background: #E1E1E1;
+    outline: none;
+    width: 90%;
+    height: 39px;
+    color: #000;
+    text-align: left;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 1em;
+}
+
+.customer-info {
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 3px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-basis: 100%;
+    margin-left: 18px;
+
+}
+
+.btn-space-2 {
+    flex-basis: 50%;
+}
+
+.btn-checkout {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+@media (min-width: 780px) {
+    
+    #textBox-2 {
+        width: 85%;
+    }
+
+    .tv-description-2 {
+        color: #000;
+        text-align: left;
+        font-family: 'SamsungSansRegular';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 40px;
+        flex-basis: 25%;
+        /* min-width: 400px; */
+    }
+    
+    .flex-container-4 {
+        row-gap: 0px;
+        column-gap: 0px;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .text-box {
+        flex-basis: 33%;
+    }
+    
+    .btn-space-2 {
+        flex-basis: 33%;
+    }
+
+    .btn-checkout {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: left;
+       
+    }
+
+}
+
+/* CONFIRM PURCHASE */
 
 /* FOOTER */
 #footer {
@@ -539,6 +882,8 @@ p {
     .store-tv-space {
         width: 50px;
     }
+
+
     /* INTRODUCTION */
 /*index.html*/
 

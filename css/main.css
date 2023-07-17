@@ -29,6 +29,62 @@ body {
     min-height: 100%;
 }
 
+/* POP UP */
+#newsletter-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 38, 38, 0.50);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(15px);
+  }
+  
+  #popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 16px;
+  }
+
+  #textBoxPopUp {
+    border: none;
+    border-radius: 16px;
+    background: #E1E1E1;
+    outline: none;
+    width: 100%;
+    height: 37px;
+    color: #000;
+    text-align: left;
+    font-family: 'SamsungSansRegular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:auto;
+    padding: 20px;
+    margin-bottom: 15px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+  
+  #close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+  }
+
 /*TEXT STYLES*/
 #title {
     color: #000;
@@ -91,7 +147,6 @@ h3 {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
-
 }
 #textBoxBig {
     border: none;
